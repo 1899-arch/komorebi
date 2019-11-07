@@ -1,0 +1,629 @@
+@charset "utf-8";
+
+/*------全体設定-------*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: rgb(56, 56, 56);
+}
+
+body{
+    font-family: '游ゴシック','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+body{
+    background-image: url(../img/bg2.png);
+}
+
+h2:before{
+    content: "";
+    background-image: url("../img/icon2.png");
+    padding-right: 35px;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+
+
+/*-----ヘッダ-----*/
+header{
+    background-image: url("../img/header2.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+}
+
+.header__title{
+    font-size: 50px;
+    padding: 200px 20px 180px;
+    color: #fff;
+    text-align: center;
+}
+
+.header__title--index{
+    font-size: 50px;
+    padding: 190px 50px 180px;
+    color: #fff;
+    line-height: 70px;
+}
+
+.header__logo{    
+   float: left; 
+   margin-top: -30px;
+   margin-left: 10px;
+}
+
+/*ヘッダメニュー*/
+
+.header__nav{
+    padding: 1px 10px 40px; 
+    padding-left: 55%;
+    font-size: 15px;
+}
+
+.header__item{
+    list-style: none;
+    margin-right: -15px;
+    float: left;
+    height: 35px;
+    padding: 15px 20px 0px 20px;
+}
+
+.header__link{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.5s;
+}
+
+.header__link:hover,
+.footer__link:hover{
+    opacity: 0.5;
+}
+
+.navToggle{
+    display: none;
+}
+
+/*おなやみ*/
+.nayami{
+    text-align: center;
+}
+
+.nayami__title{
+    margin: 70px auto 40px;
+    font-size: 25px;
+}
+
+.nayami__block{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 910px;
+    margin: 0 auto;
+}
+
+.nayami__list{
+    float: left;
+    list-style: none;
+    margin: 0 20px 15px 0;
+    background-image: cover;
+    text-align: center;
+}
+
+.nayami__img{
+    border-radius: 50%;
+}
+
+.nayami__btn{
+    margin: 5px auto;
+    background-color: #d2691e;
+    color: #ffffff;
+    font-size: 20px;
+    width: 185px;
+    display: block; 
+    text-align: center; 
+    line-height: 50px; 
+    margin-top: 20px; 
+    border-radius: 5px; /*角を丸くする*/
+    border: 3px solid #d2691e; /*3px同色の実線を枠として追加*/
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.nayami__btn:hover{
+    background-color: #8f4816;
+    border: 3px solid #d2691e;
+}
+
+/*レスポンシブ用カルーセル*/
+
+.nayami__res { margin: 0 0 50px;}
+.nayami__img--res { width: 100%; height: auto;}
+.nayami__res .slick-next { right: 20px; z-index: 0;}
+.nayami__res .slick-prev { left: 15px; z-index: 1;}
+
+
+
+/*-----おしらせ-----*/
+.info{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.info__archives{
+    height: 90px;
+    overflow: auto;
+    margin: 10px 300px 0 0;
+    
+}
+
+/*　webkitスクロールバー　*/
+.info__archives::-webkit-scrollbar{
+    width: 10px;
+}
+.info__archives::-webkit-scrollbar-track{
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #777; 
+}
+.info__archives::-webkit-scrollbar-thumb{
+    background: rgb(196, 156, 71);
+    border-radius: 10px;
+    box-shadow: none;
+}
+/**/
+
+.info__date{
+    float: left;
+    margin-left: 320px;
+}
+
+.info__text{
+    padding-bottom: 1px;
+}
+
+/*-----院長あいさつ-----*/
+.greeting{
+    margin: 30px 200px 50px 200px;
+    text-align: center;
+}
+
+.greeting__title{
+    margin-bottom: 50px;
+}
+
+.greeting__text{
+    /* float: right; */
+}
+
+/*診療時間*/
+.schedule{
+    text-align: center;
+    margin: 30px 20px 50px 20px;
+}
+
+.schedule__block{
+    padding-top: 20px;
+}
+
+.schedule__img{
+    width: 550px;
+    padding-left: 100px;
+}
+
+.schedule__text{
+    margin-left: 750px;
+    margin-top: -50px;
+    text-align: left;
+    font-size: 20px;
+}
+
+
+/*-----フッター-----*/
+.footer{
+    clear: both;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    /* background-position-y: 100%; */
+}
+
+
+/*アクセス*/
+.footer__text{
+    margin: 30px 200px 0px 200px;
+    padding-top: 80px;
+    color: #fff;
+    /* margin-top: -180px; */
+}
+
+.footer__jpn{
+    font-size: 20px;
+    color: #ccc;
+}
+
+.footer__tel{
+    font-size: 30px;
+    color: rgb(170, 199, 172);
+    /* float: left; */
+}
+
+.footer__tel:before{
+    content: "";
+    padding-right: 35px;
+    background-image: url("../img/tel.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+
+/*フッタメニュー*/
+.footer__nav{
+    clear: both;
+    padding: 1px 10px 0;
+    margin-bottom: 20px; 
+    padding-left: 35%;
+    font-size: 15px;
+}
+
+.footer__item{
+    list-style: none;
+    margin-right: -15px;
+    float: left;
+    height: 35px;
+    padding: 15px 20px 0px 20px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: #fff;
+    display: block;  
+    transition: 0.5s;
+}
+
+.footer__copy{
+    padding-left: 85%;
+    color: #ccc;
+}
+
+.animal{
+   margin-bottom: -150px;
+}
+
+
+/*カンガルー*/
+.footer__kangaroo{
+    padding-left: 80%;
+    margin-bottom: -160px;
+    position:absolute;
+}
+
+.footer__kangaroo-area{
+    position:relative;
+}
+
+
+/*レスポンシブ*/
+@media screen and (max-width:600px){ /* 画面が600px以下(=スマホ)ならこれ使え */
+
+    body{
+        font-size:3.5vw; /*レスポンシブ向きの単位　サイズに合わせる*/
+    }
+    h1{
+        font-size:7.2vw;
+    }
+    h2{
+        font-size:5vw;
+    }
+
+    *{margin: 0 auto;}
+
+    .header{
+        float: none;
+        background-image: url("../img/header2-sp.png");
+        background-size: contain;
+        margin: 20vw 0 0 0;
+        padding: 0;
+        height: 270px;
+    }
+
+    .header__logo{
+        margin-top: -25vw;
+    }
+    
+    .header__nav{
+        float: none;
+    }
+
+    .header__item{ 
+        display: inline; 
+        float: none;
+    }
+
+    .header__title--index{
+        font-size: 6vw;
+        padding: 7em 0 0 0.5em;
+        line-height: 1.2em;
+    }
+   
+    .nayami__title{
+        font-size: 5vw;
+        text-align: center;
+        margin: 7vw;
+    }
+
+
+    /**/
+    
+.nayami__block{
+    display: flex;
+    display: none;
+    width: 910px;
+    margin: 0 auto;
+}
+
+.nayami__list{
+    float: left;
+    list-style: none;
+    margin: 0 20px 15px 0;
+    background-image: cover;
+    text-align: center;
+}
+
+.nayami__img{
+    border-radius: 50%;
+}
+
+/**/
+/*-----おしらせ-----*/
+.info{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.info__archives{
+    margin: 10px 20px 0 0;    
+}
+
+.info__date{
+    margin-left: 20px;
+}
+
+
+/*-----院長あいさつ-----*/
+.greeting{
+    margin: 3vw 8vw 5vw;
+    text-align: center;
+}
+
+.greeting__title{
+    margin: 6vw 0 2vw;
+}
+
+.greeting__text{
+    text-align: left;
+}
+
+/*診療時間*/
+
+.schedule__block{
+    padding-top: 20px;
+}
+
+.schedule__img{
+    width: 380px;
+    height: 171px;
+    padding-left: 0px;
+    object-fit: cover;
+    object-position: 0% 0%;
+
+}
+
+.schedule__text{
+    margin-left: 0;
+    margin-top: -10vw;
+    font-size: 3vw;
+}
+
+
+/*-----フッター-----*/
+.footer{
+    background-image: url(../img/footer-sp.png);
+    background-size: cover;
+    padding-top: 10vw;
+}
+
+
+/*アクセス*/
+.footer__text{
+    margin: 0px 20px 0px 20px;
+    padding-top: 5px;
+}
+
+.footer__jpn{
+    font-size: 5vw;
+    color: #ccc;
+}
+
+.footer__tel{
+    font-size: 7vw;
+    color: rgb(170, 199, 172);
+}
+
+.footer__tel:before{
+    content: "";
+    padding-right: 35px;
+    background-image: url("../img/tel.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+
+/*フッタメニュー*/
+.footer__nav{
+    display: none;
+    clear: both;
+    padding: 1px 10px 0;
+    margin-bottom: 20px; 
+    padding-left: 35%;
+    font-size: 15px;
+}
+
+.footer__item{
+    list-style: none;
+    margin-right: -15px;
+    float: left;
+    height: 35px;
+    padding: 15px 20px 0px 20px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: #fff;
+    display: block;  
+    transition: 0.5s;
+}
+
+.footer__copy{
+    padding-left: 70%;
+    font-size: 2vw;
+    color: #ccc;
+}
+
+.animal{
+   margin-bottom: -150px;
+}
+
+
+/*カンガルー*/
+.footer__kangaroo{
+    width: 135px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 100%;
+    padding-left: 65%;
+    margin: 0vw;
+    position:absolute;
+    margin-top: -25vw;
+}
+
+.footer__kangaroo-area{
+    padding-top: 30px;
+    margin: 0;
+    padding: 0;
+    position:relative;
+}
+
+/*----レスポンシブ用メニュー----*/
+.header__nav {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    width: 100%;
+    padding: 0;
+}
+ 
+.header__list {
+    background: rgb(194, 207, 187);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+ 
+.header__item {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+ 
+/* 最後はラインを描かない */
+.header__item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+ 
+.header__link {
+    display: block;
+    color: #000;
+    padding: 1em 0;
+}
+ 
+/* このクラスを、jQueryで付与・削除する */
+.header__nav.active {
+    transform: translateY(0%);
+}
+
+/*メニュー枠*/
+.navToggle {
+    display: block;
+    position: fixed;    
+    right: 20px;
+    top: 12px;
+    width: 42px;
+    height: 51px;
+    cursor: pointer;
+    z-index: 3;
+    background: rgb(138, 172, 146);
+}
+ 
+/*ボタン*/
+.navToggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #eee;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+ 
+.navToggle span:nth-child(1) {
+    top: 9px;
+}
+ 
+.navToggle span:nth-child(2) {
+    top: 18px;
+}
+ 
+.navToggle span:nth-child(3) {
+    top: 27px;
+}
+ 
+.navToggle span:nth-child(4) {
+    border: none;
+    color: #eee;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+    text-align: center;
+}
+
+/*--メニューを開いた時のアニメーション--*/
+/* 最初のspanを-45度に */
+.navToggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+ 
+/* 2番目と3番目のspanを45度に */
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/*----レスポンシブ用メニューおわり----*/
+
+}
