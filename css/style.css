@@ -430,6 +430,7 @@ header{
     background-image: url(../img/footer-sp.png);
     background-size: cover;
     padding-top: 10vw;
+    bottom: 0;
 }
 
 
@@ -484,7 +485,7 @@ header{
 }
 
 .footer__copy{
-    padding-left: 70%;
+    padding-left: 65%;
     font-size: 2vw;
     color: #ccc;
 }
@@ -503,7 +504,7 @@ header{
     padding-left: 65%;
     margin: 0vw;
     position:absolute;
-    margin-top: -25vw;
+    margin-top: -30vw;
 }
 
 .footer__kangaroo-area{
