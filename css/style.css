@@ -413,12 +413,9 @@ header{
 }
 
 .schedule__img{
-    width: 380px;
+    width: 360px;
     height: 171px;
     padding-left: 0px;
-    object-fit: cover;
-    object-position: 0% 0%;
-
 }
 
 .schedule__text{
