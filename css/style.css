@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family: '游ゴシック','Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
 }
 
 body{
@@ -125,8 +125,8 @@ header{
     text-align: center; 
     line-height: 50px; 
     margin-top: 20px; 
-    border-radius: 5px; /*角を丸くする*/
-    border: 3px solid #d2691e; /*3px同色の実線を枠として追加*/
+    border-radius: 5px; 
+    border: 3px solid #d2691e; 
     transition: 0.2s;
     text-decoration: none;
 }
@@ -210,7 +210,7 @@ header{
 }
 
 .schedule__text{
-    margin-left: 750px;
+    padding-left: 35%;
     margin-top: -50px;
     text-align: left;
     font-size: 20px;
@@ -284,7 +284,7 @@ header{
 /*カンガルー*/
 .footer__kangaroo{
     padding-left: 80%;
-    margin-bottom: -160px;
+    margin-top: -50px;
     position:absolute;
 }
 
@@ -378,7 +378,7 @@ header{
     }
 
     .schedule__text{
-        margin-left: 0;
+        padding-left: 0;
         margin-top: -10vw;
         font-size: 3vw;
     }
@@ -463,11 +463,6 @@ header{
         width: 100%;
     }
     
-    /* 最後はラインを描かない */
-    .header__item:last-child {
-        padding-bottom: 0;
-        border-bottom: none;
-    }
     
     .header__link {
         display: block;
