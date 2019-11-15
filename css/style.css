@@ -139,7 +139,6 @@ header{
 /*レスポンシブ用カルーセル*/
 
 .nayami__res { margin: 0 0 50px;}
-.nayami__img--res { width: 100%; height: auto;}
 .nayami__res .slick-next { right: 20px; z-index: 0;}
 .nayami__res .slick-prev { left: 15px; z-index: 1;}
 
